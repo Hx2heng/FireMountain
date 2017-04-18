@@ -1,0 +1,120 @@
+@charset "UTF-8";
+* {
+	box-sizing: border-box
+}
+
+html {
+	width: 100%;
+	height: 100%
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #555;
+	color: #333;
+	font-size: 14px;
+	font-family: "Microsoft YaHei",sans-serif,'Microsoft Sans Serif','Microsoft JhengHei UI';
+	overflow: hidden;
+	
+}
+
+.btnwarp {
+	margin: 0 auto;
+	width: 100%
+}
+
+.btn {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	text-align: center
+}
+
+.btn img {
+	width: 80%
+}
+
+.clear {
+	clear: both
+}
+
+a.btn-get {
+	width: 90%
+}
+
+a.btn-get img {
+	width: 100%
+}
+
+.mask {
+	position: absolute;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .3;
+	filter: alpha(opacity=30);
+	-moz-opacity: .3;
+	-khtml-opacity: .3
+}
+
+#main {
+	position: relative;
+	display: table;
+	margin: 0 auto;
+	width: 480px;
+	height: 100%
+}
+
+#main canvas {
+	position: absolute;
+	top: 0;
+	z-index: 1000
+}
+
+@media screen and (max-width:480px) {
+	#main {
+		width: 100%
+	}
+}
+
+
+#end {
+
+	display: none;
+	position: relative;
+	width: 100%;
+	height:100%;
+	/*background-color:#960412 ;*/
+		background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+#end .res,.gift{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top:0;
+	left:0;
+	text-align: center;
+}
+#end .gift{
+	padding-top: 20%;
+}
+#end .gift .content-info{
+	color: white;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #EA4D10;
+}
+#end .res img,.gift img{max-width: 70%}
+#end .res{display: none;padding-top: 20%;}
+
+#end .res .info p{font-size: 1em;margin: 8px;color:#860A0A;}
+#end .res .info .code{font-size: 1.5em;color: #F6DB35;font-weight: bold;    text-shadow: 1px 1px 0px #ED5126;margin:10% 0;}
+#end .res .info .code span{}
+
+
